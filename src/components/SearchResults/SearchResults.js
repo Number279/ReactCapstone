@@ -10,10 +10,11 @@ const searchresults = (props) => {
     const nonProfitList = nonProfitArray.map(nonProfit =>
         <div>
                 <h3>Help Near You:</h3>
-                <p>{nonProfit.nonProfitName}</p>
-                <p>{nonProfit.address}</p>
-                <p>{nonProfit.hours}</p>
-                <p>{nonProfit.email}</p>
+                <p>Name: {nonProfit.nonProfitName}</p>
+                <p>Services: {nonProfit.needs}</p>
+                <p>Address: {nonProfit.address}</p>
+                <p>Hours of Operation: {nonProfit.hours}</p>
+                <p>Email: {nonProfit.email}</p>
         </div>
 
     )
