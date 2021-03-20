@@ -11,7 +11,7 @@ const Search = () => {
     let [loading, setLoading] = useState(false);
     let [willwork, setWillwork] = useState(false);
 
-    function getSearch(e) {
+    async function getSearch(e) {
         e.preventDefault();
 
         if (city.length === 0) {
@@ -27,7 +27,7 @@ const Search = () => {
         const uriEncodedCity = encodeURIComponent(city);
 
       const response =
-      axios({
+      await axios({
         method: 'get',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         url: `http://localhost:8080/nonprofits/city?city=${uriEncodedCity}`,
@@ -71,7 +71,7 @@ const Search = () => {
                     />
                 <button className={classes.Button} value="submit" type="submit">Find Help</button>
             </form>
-           {willwork === true ? 
+           {willwork === true && loading === false ? 
            <SearchResults
                 responseObj={responseObj}
                 responseArray={responseArray}
