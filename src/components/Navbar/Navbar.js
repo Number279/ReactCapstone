@@ -8,8 +8,7 @@ render(){
     <div className="nav">
         <Link to = "/">Home  </Link>
         {/* <Link to = "/about">  About Find Help Here  </Link> */}
-        <Link to = "/aboutus"> About the DYevelopers</Link>
-        
+        <Link to = "/aboutus"> About the Developers</Link> 
     </div>
         );
     }

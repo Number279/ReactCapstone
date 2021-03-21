@@ -71,13 +71,19 @@ const Search = () => {
                     />
                 <button className={classes.Button} value="submit" type="submit">Find Help</button>
             </form>
-           {willwork === true && loading === false ? 
+          {error === true ? 
+        <small className={classes.Small}>City not found.</small>  
+        : null
+        }
+        {loading === true ? 
+        <div className={classes.Loader} />
+        :null }
+           {error === false && willwork === true && loading === false ? 
            <SearchResults
                 responseObj={responseObj}
                 responseArray={responseArray}
                 error={error}
                 loading={loading}
-                willwork={willwork}
                 /> : null
             }
         </div>

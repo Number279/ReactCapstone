@@ -7,7 +7,7 @@ class AboutDevs extends React.Component {
       super(props);
       this.state = {
         students: [
-          { id: 1, name: "Sawyer Carroll", age: 26, email: "example@gmail.com" },
+          { id: 1, name: "Sawyer Carroll", age: 36, email: "sawyercarroll@gmail.com" },
           { id: 2, name: "Scott Storey", age: 26, email: "example@gmail.com" },
           { id: 3, name: "Steve Nicksic", age: 26, email: "eample@gmail.com" },
           { id: 4, name: "Shawn Christy", age: 26, email: "example@gmail.com" },
