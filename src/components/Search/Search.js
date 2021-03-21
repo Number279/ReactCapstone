@@ -2,6 +2,7 @@ import classes from './Search.module.css';
 import React, {useState} from 'react';
 import SearchResults from '../SearchResults/SearchResults';
 import axios from 'axios';
+import Header from '../Header/Header'
 
 const Search = () => {
     let [city, setCity] = useState('');
@@ -59,7 +60,7 @@ const Search = () => {
 
     return(
         <div>
-            <h2>Find Help Here</h2>
+          <Header />
             <form onSubmit = {getSearch}>
                 <input
                     type="text"

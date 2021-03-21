@@ -6,24 +6,24 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import { Container } from '@material-ui/core';
+import { CardMedia, Container } from '@material-ui/core';
 
-const useStyles = makeStyles({
-    root: {
-      minWidth: 275,
-    },
-    bullet: {
-      display: 'inline-block',
-      margin: '0 2px',
-      transform: 'scale(0.8)',
-    },
-    title: {
-      fontSize: 14,
-    },
-    pos: {
-      marginBottom: 12,
-    },
-  });
+// const useStyles = makeStyles({
+//     root: {
+//       minWidth: 275,
+//     },
+//     bullet: {
+//       display: 'inline-block',
+//       margin: '0 2px',
+//       transform: 'scale(0.8)',
+//     },
+//     title: {
+//       fontSize: 14,
+//     },
+//     pos: {
+//       marginBottom: 12,
+//     },
+//   });
 
 const searchresults = (props) => {
     // const classes = useStyles();
@@ -40,7 +40,12 @@ const searchresults = (props) => {
                 <Typography variant="h5" component="h2">
                 {nonProfit.nonProfitName}
                 </Typography>
-                <img src = {nonProfit.logo} />
+                {/* <CardMedia
+                className={classes.media}
+                image={nonProfit.logo}
+                title="Non-Profit Logo"
+                /> */}
+                <img className={classes.Logo} src = {nonProfit.logo} />
                 <Typography className={classes.pos} color="textSecondary">
                 {nonProfit.address}
                 </Typography>

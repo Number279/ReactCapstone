@@ -10,7 +10,7 @@ export default class Routes extends Component{
         return(
             <Router>
                 <Navbar />
-                <Header />
+                {/* <Header /> */}
                 <div>
                     <hr />
                     <Route name ="Home" exact path="/" component={Search} />
