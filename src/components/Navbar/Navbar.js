@@ -6,6 +6,7 @@ import Form from 'react-bootstrap/Form'
 import FormControl from 'react-bootstrap/FormControl'
 import Button from 'react-bootstrap/Button'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Navbar.css';
 
 
 
@@ -13,8 +14,8 @@ class NavBar extends Component{
 render(){
     return(
         <div>
-      <Navbar bg="primary" variant="dark">
-        <Navbar.Brand href="#home">Find Help Here</Navbar.Brand>
+      <Navbar className="color-nav" variant="dark">
+        <Navbar.Brand href="/">Find Help Here</Navbar.Brand>
         <Nav className="mr-auto">
           <Nav.Link href="/">Home</Nav.Link>
           <Nav.Link href="/aboutus">About the Devs</Nav.Link>

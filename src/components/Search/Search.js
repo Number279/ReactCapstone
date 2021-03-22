@@ -73,7 +73,7 @@ const Search = () => {
                 <button className={classes.Button} value="submit" type="submit">Find Help</button>
             </form>
           {error === true ? 
-        <small className={classes.Small}>City not found.</small>  
+        <small className={classes.Small}>No Listings Found</small>  
         : null
         }
         {loading === true ? 
