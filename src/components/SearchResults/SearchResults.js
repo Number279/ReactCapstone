@@ -7,6 +7,10 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { CardMedia, Container } from '@material-ui/core';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
+
 
 // const useStyles = makeStyles({
 //     root: {
@@ -33,7 +37,15 @@ const searchresults = (props) => {
     console.log("this is the nonProfitArray passed in state: ", nonProfitArray)
 
     const nonProfitList = nonProfitArray.map(nonProfit =>
-        <Container maxHeight="md" maxWidth="md">
+        <div className = {classes.root}>
+                                    <Grid 
+                        container
+                        // direction="column"
+                        //  justify="center"
+                        //  alignItems="center"
+                          spacing={4}>
+            <Grid item xs>
+                <Box width="75%">
                <Card className={classes.root} variant="outlined">
                    <CardContent>
                 {/* <h3>Help Near You:</h3> */}
@@ -66,8 +78,17 @@ const searchresults = (props) => {
                 <p>Hours of Operation: {nonProfit.hours}</p>
                 <p>Email: {nonProfit.email}</p> */}
                 </CardContent>
+                <CardActions>
+                <Button  href= {nonProfit.url }size="small" color="primary">
+                 Website
+                </Button>
+                </CardActions>
                 </Card>
-        </Container>
+                 </Box>
+                 </Grid>
+                 </Grid>
+
+        </div>
 
     )
     console.log("NonProfitList: ", nonProfitList);
@@ -79,9 +100,18 @@ const searchresults = (props) => {
             {props.loading && <div className={classes.Loader} />}
 
             {!props.error && !props.loading ?
-            <div>
+                        <Grid 
+                        container
+                        direction="column"
+                         justify="center"
+                         alignItems="center"
+                          spacing={3}>
+            <Grid item xs>
                 {nonProfitList}
-            </div>
+            
+                </Grid>
+                </Grid>
+        
             : null
             }
         </div>

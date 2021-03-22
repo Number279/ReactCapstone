@@ -18,6 +18,7 @@ render(){
         <Navbar.Brand href="/">Find Help Here</Navbar.Brand>
         <Nav className="mr-auto">
           <Nav.Link href="/">Home</Nav.Link>
+          <Nav.Link href="http://localhost:8080/">How to Help</Nav.Link>
           <Nav.Link href="/aboutus">About the Devs</Nav.Link>
           {/* <Nav.Link href="#pricing">Pricing</Nav.Link> */}
         </Nav>

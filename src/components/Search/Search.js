@@ -43,7 +43,7 @@ const Search = () => {
           setTimeout(() => setLoading(false), 800);
           // setData({nonProfitName: response.data.nonProfitName, address: response.data.address})
           // console.log("This is the responseObj: ", responseObj);
-          // console.log("This is the name of the Non-Profit in responseObj: ", responseObj.data[0].nonProfitName);
+          // console.log("This is the name of the Non-Profit in responseObj: ", responseArray.data[0].nonProfitName);
           // console.log("This is the name of the Non-Profit in responseArray: ", responseArray.data);
       })
       .then(() => {

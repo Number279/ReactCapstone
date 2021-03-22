@@ -8,9 +8,9 @@ class AboutDevs extends React.Component {
       this.state = {
         students: [
           { id: 1, name: "Sawyer Carroll", email: "sawyercarroll@gmail.com" },
-          { id: 2, name: "Scott Storey", email: "example@gmail.com" },
-          { id: 3, name: "Steve Nicksic", email: "eample@gmail.com" },
-          { id: 4, name: "Shawn Christy", email: "example@gmail.com" },
+          { id: 2, name: "Scott Storey", email: "ignite_storey@yahoo.com " },
+          { id: 3, name: "Steve Nicksic", email: "smnicksic@gmail.com"},
+          { id: 4, name: "Shawn Christy", email: "shawn.g.christy@gmail.com" },
           { id: 5, name: "Wade LaCour", email: "wade.lacour@gmail.com"}
         ]
       };
