@@ -7,11 +7,11 @@ class AboutDevs extends React.Component {
       super(props);
       this.state = {
         students: [
-          { id: 1, name: "Sawyer Carroll", age: 36, email: "sawyercarroll@gmail.com" },
-          { id: 2, name: "Scott Storey", age: 26, email: "example@gmail.com" },
-          { id: 3, name: "Steve Nicksic", age: 26, email: "eample@gmail.com" },
-          { id: 4, name: "Shawn Christy", age: 26, email: "example@gmail.com" },
-          { id: 5, name: "Wade LaCour", age: 26, email: "wade.lacour@gmail.com"}
+          { id: 1, name: "Sawyer Carroll", email: "sawyercarroll@gmail.com" },
+          { id: 2, name: "Scott Storey", email: "example@gmail.com" },
+          { id: 3, name: "Steve Nicksic", email: "eample@gmail.com" },
+          { id: 4, name: "Shawn Christy", email: "example@gmail.com" },
+          { id: 5, name: "Wade LaCour", email: "wade.lacour@gmail.com"}
         ]
       };
     }
@@ -30,7 +30,6 @@ class AboutDevs extends React.Component {
           <tr key={id}>
             <td>{id}</td>
             <td>{name}</td>
-            <td>{age}</td>
             <td>{email}</td>
           </tr>
         );
